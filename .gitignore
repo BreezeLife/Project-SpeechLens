@@ -1,0 +1,13 @@
+node_modules/
+dist/
+dist-web/
+.vite/
+.vite-temp/
+*.tsbuildinfo
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]

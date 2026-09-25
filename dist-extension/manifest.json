@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "SpeechLens",
+  "version": "0.2.0",
+  "description": "Local-first speech intelligence for the active tab.",
+  "permissions": ["activeTab", "tabCapture", "offscreen", "storage", "sidePanel"],
+  "host_permissions": ["<all_urls>", "http://127.0.0.1:8787/*"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_title": "Open SpeechLens" },
+  "side_panel": { "default_path": "index.html" },
+  "commands": { "toggle-session": { "suggested_key": { "default": "Ctrl+Shift+S" }, "description": "Start or stop SpeechLens" } }
+}
